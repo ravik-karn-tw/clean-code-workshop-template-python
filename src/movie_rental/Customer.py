@@ -13,10 +13,10 @@ class Customer:
     def add_rental(self, rental: Rental):
         self.rentals.append(rental)
 
-    def get_name(self):
+    def get_name(self) -> str:
         return self.name
 
-    def statement(self):
+    def statement(self) -> str:
         total_amount: float = 0.0
         frequent_renter_points: int = 0
         result: str = "Rental Record for " + self.get_name() + "\n"
