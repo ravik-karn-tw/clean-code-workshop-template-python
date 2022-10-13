@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
+coverage = "*"
 
 [packages]
 
@@ -13,6 +14,8 @@ python_version = "3.10"
 
 [scripts]
 test-unit = "python -m pytest -vv tests/unit"
+coverage-run = "coverage run  -m pytest test"
+coverage-report = "coverage html"
 
 [pipenv]
 allow_prereleases = true
