@@ -3,6 +3,9 @@ from src.movie_rental.Rental import Rental
 
 
 class Customer:
+    name: str
+    rentals: list[Rental]
+
     def __init__(self, name: str):
         self.name = name
         self.rentals = []

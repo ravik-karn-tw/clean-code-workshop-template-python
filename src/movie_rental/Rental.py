@@ -2,6 +2,9 @@ from src.movie_rental.Movie import Movie
 
 
 class Rental:
+    movie: Movie
+    days_rented: int
+
     def __init__(self, movie: Movie, days_rented: int):
         self.movie = movie
         self.days_rented = days_rented

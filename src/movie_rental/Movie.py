@@ -3,6 +3,9 @@ class Movie:
     CHILDRENS: int = 1
     NEW_RELEASE: int = 2
 
+    title: str
+    price_code: int
+
     def __init__(self, title: str, price_code: int):
         self.title = title
         self.price_code = price_code
